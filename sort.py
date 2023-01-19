@@ -23,8 +23,5 @@ def insertionSort(array):
         array[j + 1] = key
 
 
-data = [9,5,12,8]
-insertionSort(data)
-
-print('Sorted Array in Ascending Order:')
-print(data)
+def mergeSort(array):
+    pass
