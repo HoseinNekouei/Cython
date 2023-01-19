@@ -2,8 +2,10 @@ import time as t
 import data
 import sort
 
+print('-----python------')
+
 t1_insertionSort = t.time()
-sort.insertionSort(data.getarray)
+sort.insertionSort(data.getarray())
 t2_insertionSort = t.time()
 
 print('Sorted Array in Ascending Order:')
