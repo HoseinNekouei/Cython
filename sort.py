@@ -1,4 +1,12 @@
 # Insertion sort in Python
+# Insertion Sort Complexity
+# Time Complexity	 
+# Best	O(n)
+# Worst	O(n2)
+# Average	O(n2)
+# Space Complexity	O(1)
+# Stability	Yes
+
 def insertionSort(array):
 
     # Compare key with each element on the left of it until an element smaller than it is found
