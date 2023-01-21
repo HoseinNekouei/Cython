@@ -22,7 +22,7 @@ if we ignore the time complexity of merge-sort algorithm, even though it is bett
 
  Average Case Complexity: O(n2)
 
-#Result
+# Result
 
 
 -----python------
@@ -42,6 +42,6 @@ The time obtained for the merge sort algorithm with Cyton is:  0.003001451492309
 
 insertion sort / merge sort by Cython:  1.67
 
-#Finaly
+# Finaly
 
 Choosing the right algorithm and using Cython will increase the speed of code running in Python amazingly
