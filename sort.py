@@ -1,17 +1,13 @@
 # Insertion sort in Python
-# Insertion Sort Complexity
-# Time Complexity	 
+# Time Complexity
 # Best	O(n)
 # Worst	O(n2)
 # Average	O(n2)
-# Space Complexity	O(1)
-# Stability	Yes
 
 def insertionSort(array):
-
     # Compare key with each element on the left of it until an element smaller than it is found
-    # For descending order, change key<array[j] to key>array[j].     
-    for step in range(1,len(array)):
+    # For descending order, change key<array[j] to key>array[j].
+    for step in range(1, len(array)):
         key = array[step]
         j = step - 1
 
@@ -19,7 +15,55 @@ def insertionSort(array):
             array[j + 1] = array[j]
             j -= 1
 
-        # Place key at after the element just smaller than it.    
+        # Place key at after the element just smaller than it.
         array[j + 1] = key
 
 
+# Merge Sort in Python
+# Time Complexity
+# Best Case Complexity: O(n*log n)
+# Worst Case Complexity: O(n*log n)
+# Average Case Complexity: O(n*log n)
+
+def mergeSort(array):
+    if len(array) > 1:
+
+        # r is the point where the array is divided into two subarrays
+        r = len(array)//2
+        L = array[:r]
+        M = array[r:]
+
+        # Sort the two halves
+        mergeSort(L)
+        mergeSort(M)
+
+        i = j = k = 0
+
+        # Until we reach either end of either L or M, pick larger among
+        # elements L and M and place them in the correct position at A[p..r]
+        while i < len(L) and j < len(M):
+            if L[i] < M[j]:
+                array[k] = L[i]
+                i += 1
+            else:
+                array[k] = M[j]
+                j += 1
+            k += 1
+
+        # When we run out of elements in either L or M,
+        # pick up the remaining elements and put in A[p..r]
+        while i < len(L):
+            array[k] = L[i]
+            i += 1
+            k += 1
+
+        while j < len(M):
+            array[k] = M[j]
+            j += 1
+            k += 1
+
+# Print the array
+def printList(array):
+    for i in range(len(array)):
+        print(array[i], end=" ")
+    print()
