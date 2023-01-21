@@ -66,10 +66,3 @@ cpdef mergeSort(array):
             array[k] = M[j]
             j += 1
             k += 1
-
-# Print the array
-cpdef printList(array):
-    cdef int i = 0
-    for i in range(len(array)):
-        print(array[i], end=" ")
-    print()
