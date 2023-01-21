@@ -22,4 +22,8 @@ if we ignore the time complexity of merge-sort algorithm, even though it is bett
 
  Average Case Complexity: O(n2)
 
- 
+time of insertion sort for 2000 float number in a array is:  0.34029459953308105
+
+time of merge sort for 2000 float number in a array is:  0.011481523513793945
+
+That means #mergeSort algorithm is 32 times faster than #insertionSort in python
