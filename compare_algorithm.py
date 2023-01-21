@@ -21,7 +21,7 @@ result_mergeSort_time = t2_mergeSort - t1_mergeSort
 print(result_mergeSort_time,'\n')
 
 
-print('Algorithm execution time ratio with python is:',round(result_insertionSort_time/result_mergeSort_time,2))
+print('insertion sort / merge sort by Python: ',round(result_insertionSort_time/result_mergeSort_time,2))
 
 
 print('\n','-----Cython------','\n')
@@ -41,4 +41,4 @@ result_cmergeSort_time = t2_CmergeSort - t1_CmergeSort
 print('The time obtained for the merge sort algorithm with Cyton is: ', end=' ')
 print(result_cmergeSort_time,'\n')
 
-print('Algorithm execution time ratio with Cython is:',round(result_cinsertionSort_time/result_cmergeSort_time,2))
+print('insertion sort / merge sort by Cython: ',round(result_cinsertionSort_time/result_cmergeSort_time,2))
