@@ -3,3 +3,5 @@ build/
 hello.c
 hello.cp39-win_amd64.pyd
 test.py
+csort.c
+csort.cp39-win_amd64.pyd
