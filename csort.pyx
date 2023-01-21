@@ -4,11 +4,11 @@
 # Worst	O(n2)
 # Average	O(n2)
 
-cpdef c_insertionSort(array):
+def c_insertionSort(array):
     # Compare key with each element on the left of it until an element smaller than it is found
     # For descending order, change key<array[j] to key>array[j].
     cdef int step,j = 0
-    cdef float key =0.0
+    cdef float key = 0.0
 
     for step in range(1, len(array)):
         key = array[step]
@@ -28,7 +28,7 @@ cpdef c_insertionSort(array):
 # Worst Case Complexity: O(n*log n)
 # Average Case Complexity: O(n*log n)
 
-cpdef c_mergeSort(array):
+def c_mergeSort(array):
     cdef int i,j,k = 0
 
     if len(array) > 1:
@@ -66,3 +66,11 @@ cpdef c_mergeSort(array):
             array[k] = M[j]
             j += 1
             k += 1
+
+# Print the array
+cpdef printList(array):
+    cdef int i = 0
+    myList = []
+    for i in range(len(array)):
+        myList.append(array[i])
+    print(myList)
