@@ -1,4 +1,4 @@
-# Insertion sort in Python
+# Insertion sort in Cython
 # Time Complexity
 # Best	O(n)
 # Worst	O(n2)
@@ -22,7 +22,7 @@ cpdef c_insertionSort(array):
         array[j + 1] = key
 
 
-# Merge Sort in Python
+# Merge Sort in Cython
 # Time Complexity
 # Best Case Complexity: O(n*log n)
 # Worst Case Complexity: O(n*log n)
@@ -39,8 +39,8 @@ cpdef c_mergeSort(array):
         M = array[r:]
 
         # Sort the two halves
-        mergeSort(L)
-        mergeSort(M)
+        c_mergeSort(L)
+        c_mergeSort(M)
 
         i = j = k = 0
 
