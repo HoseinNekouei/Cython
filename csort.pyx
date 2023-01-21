@@ -4,7 +4,7 @@
 # Worst	O(n2)
 # Average	O(n2)
 
-cpdef insertionSort(array):
+cpdef c_insertionSort(array):
     # Compare key with each element on the left of it until an element smaller than it is found
     # For descending order, change key<array[j] to key>array[j].
     cdef int step,j = 0
@@ -28,7 +28,7 @@ cpdef insertionSort(array):
 # Worst Case Complexity: O(n*log n)
 # Average Case Complexity: O(n*log n)
 
-cpdef mergeSort(array):
+cpdef c_mergeSort(array):
     cdef int i,j,k = 0
 
     if len(array) > 1:
